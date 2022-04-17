@@ -14,7 +14,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology"/>
         <rdfs:label xml:lang="en">Creator: Victor Colina Coca</rdfs:label>
-        <rdfs:label xml:lang="en">Ontology Name: The Wire Ontology</rdfs:label>
+        <rdfs:label xml:lang="en">Ontology Name: TV Series Ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -1437,11 +1437,6 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
             </owl:Restriction>
         </rdf:type>
-        <TVSeriesOntology:hasCast rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast"/>
-        <TVSeriesOntology:hasCrew rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew"/>
-        <TVSeriesOntology:hasSeason rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1"/>
-        <TVSeriesOntology:isProducedIn rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States"/>
-        <TVSeriesOntology:isSetIn rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore"/>
     </owl:NamedIndividual>
     
 
