@@ -1635,7 +1635,7 @@
     "@value" : "Creator: Victor Colina Coca"
   }, {
     "@language" : "en",
-    "@value" : "Ontology Name: The Wire Ontology"
+    "@value" : "Ontology Name: TV Series Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology"
@@ -2051,21 +2051,6 @@
 }, {
   "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast" : [ {
-    "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast"
-  } ],
-  "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew" : [ {
-    "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew"
-  } ],
-  "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason" : [ {
-    "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1"
-  } ],
-  "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn" : [ {
-    "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States"
-  } ],
-  "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn" : [ {
-    "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"
   }, {

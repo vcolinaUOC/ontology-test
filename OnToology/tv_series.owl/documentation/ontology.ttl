@@ -9,7 +9,7 @@
 <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> rdf:type owl:Ontology ;
                                                                         owl:versionIRI <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> ;
                                                                         rdfs:label "Creator: Victor Colina Coca"@en ,
-                                                                                   "Ontology Name: The Wire Ontology"@en .
+                                                                                   "Ontology Name: TV Series Ontology"@en .
 
 #################################################################
 #    Annotation properties
@@ -1010,12 +1010,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                     owl:onProperty :hasCrew ;
                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                     owl:onClass :Crew
-                  ] ;
-         :hasCast :The_Wire_Cast ;
-         :hasCrew :The_Wire_Crew ;
-         :hasSeason :TheWire_Season_1 ;
-         :isProducedIn :United_States ;
-         :isSetIn :Baltimore .
+                  ] .
 
 
 ###  http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1

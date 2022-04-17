@@ -1,7 +1,7 @@
 <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> .
 <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Creator: Victor Colina Coca"@en .
-<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology Name: The Wire Ontology"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology Name: TV Series Ontology"@en .
 # 
 # 
 # #################################################################
@@ -995,11 +995,6 @@ _:genid112 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/v
 _:genid112 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> .
 _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> .
-<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> .
-<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> .
-<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> .
-<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> .
 # 
 # http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1
 <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
