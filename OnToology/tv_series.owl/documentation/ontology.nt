@@ -1,0 +1,1338 @@
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Creator: Victor Colina Coca"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology Name: The Wire Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a show with its cast team"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a cast group with its actors/actresses"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a show with the fictional characters of its story"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a show with its crew team"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a crew with its members"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a season with its episodes"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a team with its members"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an episode with the next episode of the season"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a season with the next season of a show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an episode with the previous episode of the season"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a season with the previous season of a show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a show with its seasons"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an actor with the casts he or she is a part of"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the cast team with the show that belongs to"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a fictional character with the show that belongs to"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a country with the shows produced in there"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a person who is not an actor with the teams he or she is part of"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a crew team with the show that belongs to"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an episode with the season that belongs to"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a person with a group that is member of"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a location with the shows that its story occurs there"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a fictional character with the actor who plays it"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the show with the country or countries involved in the production"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Season with the show that belongs"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the show with the place where story occurs"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an actor with the fictional characters played by him or her"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of a fictional character"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a city"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a country"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration in minutes of an episode"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Number to determine the order of season's episodes"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Name to identify an episode"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Latitude of a city in degrees"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Longitude of a city in degrees"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of episodes of a season"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of seasons of a show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> <http://www.w3.org/2000/01/rdf-schema#comment> "Full name of person"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Number to determine the order of show's seasons"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Name to identify TV serie"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person who works as actor/actress in the show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the group of actors involved in a TV serie"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#maxInclusive> "90.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2001/XMLSchema#minInclusive> "-90.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#maxInclusive> "180.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2001/XMLSchema#minInclusive> "-180.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a city and is used to relate the TV series to the city where the story takes place."@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/City"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents fictional police officers with command position"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a country"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid29 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator> .
+_:genid31 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> .
+_:genid32 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> .
+_:genid33 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> .
+_:genid34 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> .
+_:genid35 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the group of people involved in a TV serie apart from actors"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents all fictional characters who live outside of the law"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents fictional police officers with investigator position"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid41 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person who works as a director in the show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onDataRange> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid48 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an episode of the TV serie."@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid49 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person who works as executive producer in the show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid51 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a fictional character of the TV serie"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any country, city, state..."@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid53 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://www.wikidata.org/wiki/Q215627"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents all fictional characters who work in a police department fighting for law compliance"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid56 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person who works as producer in the show"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid58 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person involved in a TV serie project"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+_:genid60 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid61 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#onDataRange> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a season of the TV serie and is composed by an ordered list of episodes"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+_:genid66 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid67 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid68 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+_:genid69 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+_:genid70 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+_:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a TV serie"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a group of people working towards the same goal"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Team"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid72 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid73 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents fictional police officers with trooper position"@en .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid74 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid75 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a person who works as writer in the show"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid76 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#onDataRange> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
+_:genid82 <http://www.w3.org/2001/XMLSchema#maxInclusive> "90.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2001/XMLSchema#minInclusive> "-90.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid77 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#onDataRange> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/2001/XMLSchema#maxInclusive> "180.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/2001/XMLSchema#minInclusive> "-180.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid87 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName> "Baltimore" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude> "39.299236"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude> "-76.60938"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid97 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid98 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> "Dominic West" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid99 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid100 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription> "Irish whiskey. The stick. A good hard case. And women. These are some affinities in the life of officer Jimmy McNulty. A failed marriage, drunkenness, philandering, disturbing co-workers in the middle of the night, insubordination and backdooring aside, McNulty is good police - both in skill and heart - driven by a propensity for solving cases." .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName> "James \"Jimmy\" McNulty" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid101 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#onDataRange> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid102 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid106 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter> .
+_:genid107 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid108 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+_:genid109 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+_:genid110 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+_:genid111 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid112 .
+_:genid112 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+_:genid112 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid113 .
+_:genid113 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+_:genid113 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid114 .
+_:genid114 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid114 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid115 .
+_:genid115 <http://www.w3.org/2002/07/owl#onDataRange> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid115 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor> .
+_:genid119 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid120 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator> .
+_:genid121 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director> .
+_:genid122 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid123 .
+_:genid123 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer> .
+_:genid123 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid124 .
+_:genid124 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer> .
+_:genid124 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer> .
+_:genid125 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid126 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid127 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> "United Kingdom" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid128 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents a city and is used to relate the TV serie with the city where the story takes place"@en .
+# 
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a real country and is used to relate a TV serie with the country or countries of production"@en .
+# 
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an episode of the TV serie"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid129 <http://www.w3.org/2002/07/owl#members> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid136 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid136 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to set the order for the first episode of a season" .
+_:genid136 <http://www.w3.org/2000/01/rdf-schema#label> "FirstSeasonRule" .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid136 <http://www.w3.org/2003/11/swrl#body> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid138 .
+_:genid138 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid138 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid138 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid140 .
+_:genid140 <http://www.w3.org/2003/11/swrl#arguments> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#empty> .
+<http://www.w3.org/2003/11/swrlb#empty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid143 .
+_:genid143 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid143 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid136 <http://www.w3.org/2003/11/swrl#head> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid145 .
+_:genid145 <http://www.w3.org/2003/11/swrl#argument2> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid145 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid145 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid146 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid146 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to determine order of episodes" .
+_:genid146 <http://www.w3.org/2000/01/rdf-schema#label> "EpisodeOrderRule" .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid146 <http://www.w3.org/2003/11/swrl#body> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
+_:genid148 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order> .
+_:genid148 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid148 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid150 .
+_:genid150 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid150 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
+_:genid152 <http://www.w3.org/2003/11/swrl#arguments> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextEpisode> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#add> .
+<http://www.w3.org/2003/11/swrlb#add> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid157 .
+_:genid157 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid157 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid157 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid146 <http://www.w3.org/2003/11/swrl#head> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid159 .
+_:genid159 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextEpisode> .
+_:genid159 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid159 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid160 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid160 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to determine order of seasons" .
+_:genid160 <http://www.w3.org/2000/01/rdf-schema#label> "SeasonOrderRule" .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid160 <http://www.w3.org/2003/11/swrl#body> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid168 .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid162 .
+_:genid162 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order> .
+_:genid162 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid162 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid164 .
+_:genid164 <http://www.w3.org/2003/11/swrl#arguments> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid166 .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextSeason> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#add> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid169 .
+_:genid169 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid169 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid171 .
+_:genid171 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid171 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid171 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid160 <http://www.w3.org/2003/11/swrl#head> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid173 .
+_:genid173 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextSeason> .
+_:genid173 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid173 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid174 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid174 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to set the order for the first episode of a season" .
+_:genid174 <http://www.w3.org/2000/01/rdf-schema#label> "FirstEpisodeRule" .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid174 <http://www.w3.org/2003/11/swrl#body> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid176 .
+_:genid176 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid176 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid178 .
+_:genid178 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid178 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid178 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid180 .
+_:genid180 <http://www.w3.org/2003/11/swrl#arguments> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid180 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#empty> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid174 <http://www.w3.org/2003/11/swrl#head> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid183 .
+_:genid183 <http://www.w3.org/2003/11/swrl#argument2> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid183 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x> .
+_:genid183 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,2056 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#"
+     xml:base="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:TVSeriesOntology="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology"/>
+        <rdfs:label xml:lang="en">Creator: Victor Colina Coca</rdfs:label>
+        <rdfs:label xml:lang="en">Ontology Name: The Wire Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+        <rdfs:comment xml:lang="en">Relates a show with its cast team</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+        <rdfs:comment xml:lang="en">Relates a cast group with its actors/actresses</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:comment xml:lang="en">Relates a show with the fictional characters of its story</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+        <rdfs:comment xml:lang="en">Relates a show with its crew team</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:comment xml:lang="en">Relates a crew with its members</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:comment xml:lang="en">Relates a season with its episodes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdfs:comment xml:lang="en">Relates a team with its members</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:comment xml:lang="en">Relates an episode with the next episode of the season</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:comment xml:lang="en">Relates a season with the next season of a show</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:comment xml:lang="en">Relates an episode with the previous episode of the season</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:comment xml:lang="en">Relates a season with the previous season of a show</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:comment xml:lang="en">Relates a show with its seasons</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+        <rdfs:comment xml:lang="en">Relates an actor with the casts he or she is a part of</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:comment xml:lang="en">Relates the cast team with the show that belongs to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:comment xml:lang="en">Relates a fictional character with the show that belongs to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:comment xml:lang="en">Relates a country with the shows produced in there</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+        <rdfs:comment xml:lang="en">Relates a person who is not an actor with the teams he or she is part of</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:comment xml:lang="en">Relates a crew team with the show that belongs to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:comment xml:lang="en">Relates an episode with the season that belongs to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        <rdfs:comment xml:lang="en">Relates a person with a group that is member of</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:comment xml:lang="en">Relates a location with the shows that its story occurs there</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+        <rdfs:comment xml:lang="en">Relates a fictional character with the actor who plays it</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+        <rdfs:comment xml:lang="en">Relates the show with the country or countries involved in the production</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:comment xml:lang="en">Relates a Season with the show that belongs</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdfs:comment xml:lang="en">Relates the show with the place where story occurs</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:comment xml:lang="en">Relates an actor with the fictional characters played by him or her</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Description of a fictional character</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of a city</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of a country</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Duration in minutes of an episode</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Number to determine the order of season&apos;s episodes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name to identify an episode</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Latitude of a city in degrees</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Longitude of a city in degrees</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Number of episodes of a season</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Number of seasons of a show</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Full name of person</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Number to determine the order of show&apos;s seasons</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name to identify TV serie</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person who works as actor/actress in the show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+        <rdfs:comment xml:lang="en">Represents the group of actors involved in a TV serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-90.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-180.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a city and is used to relate the TV series to the city where the story takes place.</rdfs:comment>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/page/City</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents fictional police officers with command position</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents the group of people involved in a TV serie apart from actors</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents all fictional characters who live outside of the law</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents fictional police officers with investigator position</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person who works as a director in the show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents an episode of the TV serie.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person who works as executive producer in the show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:comment xml:lang="en">Represents a fictional character of the TV serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location">
+        <rdfs:comment xml:lang="en">Represents any country, city, state...</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person</rdfs:comment>
+        <rdfs:sameAs xml:lang="en">https://www.wikidata.org/wiki/Q215627</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents all fictional characters who work in a police department fighting for law compliance</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person who works as producer in the show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person involved in a TV serie project</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a season of the TV serie and is composed by an ordered list of episodes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a TV serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team">
+        <rdfs:comment xml:lang="en">Represents a group of people working towards the same goal</rdfs:comment>
+        <rdfs:sameAs xml:lang="en">https://dbpedia.org/page/Team</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents fictional police officers with trooper position</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represents a person who works as writer in the show</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-90.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-180.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdf:type>
+        <isPlacementOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire"/>
+        <cityName>Baltimore</cityName>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.299236</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-76.60938</longitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isCastMemberOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast"/>
+        <isCrewMemberOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew"/>
+        <plays rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty"/>
+        <personName>Dominic West</personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#James_McNulty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isPlayedBy rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West"/>
+        <characterDescription>Irish whiskey. The stick. A good hard case. And women. These are some affinities in the life of officer Jimmy McNulty. A failed marriage, drunkenness, philandering, disturbing co-workers in the middle of the night, insubordination and backdooring aside, McNulty is good police - both in skill and heart - driven by a propensity for solving cases.</characterDescription>
+        <personName>James &quot;Jimmy&quot; McNulty</personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isEpisodeOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasCast rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast"/>
+        <hasCrew rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew"/>
+        <hasSeason rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1"/>
+        <isProducedIn rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Baltimore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire_Season_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdf:type>
+        <hasEpisode rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season_1_Episode_1"/>
+        <isSeasonOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Cast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasCastMember rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West"/>
+        <isCastOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#The_Wire_Crew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasCrewMember rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West"/>
+        <isCrewOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_Kingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isCountryOriginOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Dominic_West"/>
+        <countryName>United Kingdom</countryName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#United_States">
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isCountryOfProduction rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#TheWire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#City">
+        <rdfs:comment xml:lang="en">Class that represents a city and is used to relate the TV serie with the city where the story takes place</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#Country">
+        <rdfs:comment xml:lang="en">Represents a real country and is used to relate a TV serie with the country or countries of production</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#Episode">
+        <rdfs:comment xml:lang="en">Represents an episode of the TV serie</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextEpisode">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextSeason">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Rule to set the order for the first episode of a season</rdfs:comment>
+        <rdfs:label>FirstSeasonRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#empty"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Rule to determine order of episodes</rdfs:comment>
+        <rdfs:label>EpisodeOrderRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextEpisode"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextEpisode"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Rule to determine order of seasons</rdfs:comment>
+        <rdfs:label>SeasonOrderRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#add"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextSeason"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#order"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#nextSeason"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Rule to set the order for the first episode of a season</rdfs:comment>
+        <rdfs:label>FirstEpisodeRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#empty"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

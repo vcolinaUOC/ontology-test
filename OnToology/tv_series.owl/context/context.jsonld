@@ -1,0 +1,249 @@
+{
+  "@context" : {
+    "Creator" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Creator"
+    },
+    "hasCast" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCast",
+      "@type" : "@id"
+    },
+    "numberOfEpisodes" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfEpisodes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasCastMember" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCastMember",
+      "@type" : "@id"
+    },
+    "Detective" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Detective"
+    },
+    "FictionalCharacter" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#FictionalCharacter"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Country"
+    },
+    "isCountryOriginOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOriginOf",
+      "@type" : "@id"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "ExecutiveProducer" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#ExecutiveProducer"
+    },
+    "episodeTitle" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "seasonOrder" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#seasonOrder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Director"
+    },
+    "Cast" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Cast"
+    },
+    "plays" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#plays",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasPreviousSeason" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousSeason",
+      "@type" : "@id"
+    },
+    "hasNextEpisode" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextEpisode",
+      "@type" : "@id"
+    },
+    "episodeOrder" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#episodeOrder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "longitude" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#longitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "isSetIn" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSetIn",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Location"
+    },
+    "hasEpisode" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasEpisode",
+      "@type" : "@id"
+    },
+    "countryName" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Episode"
+    },
+    "isCountryOfProduction" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCountryOfProduction",
+      "@type" : "@id"
+    },
+    "isMemberOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isMemberOf",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Person"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Writer"
+    },
+    "showTitle" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#showTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCrewMember" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrewMember",
+      "@type" : "@id"
+    },
+    "latitude" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Actor"
+    },
+    "numberOfSeasons" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#numberOfSeasons",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Trooper" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Trooper"
+    },
+    "Crew" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Crew"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Producer"
+    },
+    "hasMember" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasMember",
+      "@type" : "@id"
+    },
+    "isCrewMemberOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewMemberOf",
+      "@type" : "@id"
+    },
+    "personName" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#personName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPreviousEpisode" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasPreviousEpisode",
+      "@type" : "@id"
+    },
+    "isProducedIn" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isProducedIn",
+      "@type" : "@id"
+    },
+    "isSeasonOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isSeasonOf",
+      "@type" : "@id"
+    },
+    "PoliceOfficer" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#PoliceOfficer"
+    },
+    "isCrewOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCrewOf",
+      "@type" : "@id"
+    },
+    "Team" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Team"
+    },
+    "hasNextSeason" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasNextSeason",
+      "@type" : "@id"
+    },
+    "Commander" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Commander"
+    },
+    "isPlacementOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlacementOf",
+      "@type" : "@id"
+    },
+    "isCastOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastOf",
+      "@type" : "@id"
+    },
+    "duration" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#duration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isFrom" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isFrom",
+      "@type" : "@id"
+    },
+    "isEpisodeOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isEpisodeOf",
+      "@type" : "@id"
+    },
+    "Criminal" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Criminal"
+    },
+    "isCharacterFrom" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCharacterFrom",
+      "@type" : "@id"
+    },
+    "isPlayedBy" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isPlayedBy",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#City"
+    },
+    "cityName" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#cityName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "RealPerson" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#RealPerson"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasCrew" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCrew",
+      "@type" : "@id"
+    },
+    "Show" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Show"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#Season"
+    },
+    "isCastMemberOf" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#isCastMemberOf",
+      "@type" : "@id"
+    },
+    "characterDescription" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#characterDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSeason" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasSeason",
+      "@type" : "@id"
+    },
+    "hasCharacter" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/TVSeriesOntology#hasCharacter",
+      "@type" : "@id"
+    }
+  }
+}
